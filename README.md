@@ -4,6 +4,12 @@
 <h2>
   :man_technologist: 스터디 진행 방식 
 </h2>
+
+<h3><b>0. 문제 풀이 기간 </b> </h3>
+<b>매주 월 ~ 일</b>
+
+<br>
+
 <h3><b>1. 문제 선정 </b> </h3>
 <details>
   <summary>자세히</summary>
