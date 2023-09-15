@@ -31,6 +31,7 @@
 <h3><b>3. 깃 관리 + Issue & PR(Pull Request) </b> </h3>
 <details>
   <summary>자세히</summary>
+  ++참고 : 사진 클릭하면 잘보임
   <ol>
     <li>프로젝트를 생성한다.</li>
     <li>
