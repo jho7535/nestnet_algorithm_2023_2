@@ -59,7 +59,7 @@
     </li>
     <li>
       해당 주차 문제를 모두 풀면 "git add 본인 이름" -> git commit -m "(#이슈번호) [해당주차] 이름" 으로 커밋을 한 후 본인 레포지토리에 push 한다. ex) git commit -m "(#3) [1주차] 김성호"
-      <img src="https://github.com/Nestnet-study/nestnet_algorithm_2023_2/assets/81570533/0709db25-98fe-4b64-a9dc-26b4bbcfe2e0", width=100%>
+      <img src="https://github.com/Nestnet-study/nestnet_algorithm_2023_2/assets/81570533/2c14488a-3965-45fa-a995-eff56029e28f", width=100%>
     </li>
     <li>
       본인 레포지토리에 push가 잘 된 것을 확인한 후, 
