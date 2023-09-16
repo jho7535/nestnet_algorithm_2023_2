@@ -30,5 +30,6 @@ class boj_20115 {
             list.add(temp);
         }
         System.out.println(list.get(0));
+        System.out.println();
     }
 }

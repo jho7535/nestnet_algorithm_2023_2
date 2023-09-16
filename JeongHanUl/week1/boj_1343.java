@@ -7,6 +7,7 @@ public class boj_1343 {
     public static void main(String[] args) {
         b_1343 a = new b_1343();
         a.play();
+        System.out.println();
     }
 }
 

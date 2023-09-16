@@ -26,6 +26,7 @@ public class boj_20365 {
         color[colIndex]++;
 
         System.out.println(color[0] > color[1] ? (1 + color[1]) : (1 + color[0]));
+        System.out.println();
     }
 
     static int switchColor(int current) {
