@@ -80,4 +80,11 @@
 
 <br>
 
+<h3><b>4. 모든 풀이 끝난 후, Organization Repository에 merge가 끝난 후</b> </h3>
+<details>
+  <summary>자세히</summary>
+  fork해서 가져온 본인 레포지토리의 Sync fork를 해서 Organization Repository와 동기화 해준다.
+  <img src="https://github.com/Nestnet-study/nestnet_algorithm_2023_2/assets/81570533/6637504b-45f8-4ead-ac83-c74a67dee8e3", width=100%>
+</details>
+
 <b>+ 다른 사람 레포지토리 fork & Pull Request를 통한 협업에 대해 잘 모르겠다면? <a href="https://inpa.tistory.com/entry/GIT-%E2%9A%A1%EF%B8%8F-%EA%B9%83%ED%97%99-PRPull-Request-%EB%B3%B4%EB%82%B4%EB%8A%94-%EB%B0%A9%EB%B2%95-folk-issue">Click!!!</a></b>
