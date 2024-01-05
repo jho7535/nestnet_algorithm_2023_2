@@ -1,5 +1,5 @@
 # 2023-2-algorithm
-2023-2 학기 네스트넷 알고리즘 스터디 
+2023-2 학기 네스트넷 알고리즘 스터디 (silver ~ gold)
 
 <h2>
   :man_technologist: 스터디 진행 방식 
