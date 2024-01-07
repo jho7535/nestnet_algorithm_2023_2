@@ -16,7 +16,8 @@ import sys
 string = sys.stdin.readline().rstrip()
 s = 0
 e = len(string) - 1
-cnt = 0
+right_cnt = 0
+left_cnt = 0
 while s < e and string[s] == 'a':
     s += 1
 while s < e and string[e] == 'a':
@@ -27,7 +28,23 @@ while s < e:
     while s < e and string[s] == 'b':
         s += 1
     if s < e:
-        cnt += 1
+        right_cnt += 1
         s += 1
         e -= 1
-print(cnt)
+
+s = 0
+e = len(string) - 1
+while s < e and string[s] == 'a':
+    s += 1
+while s < e and string[e] == 'a':
+    e -= 1
+while s < e:
+    while s < e and string[e] == 'b':
+        e -= 1
+    while s < e and string[s] == 'a':
+        s += 1
+    if s < e:
+        left_cnt += 1
+        s += 1
+        e -= 1
+print(min(right_cnt, left_cnt))
