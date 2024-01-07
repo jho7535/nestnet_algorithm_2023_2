@@ -22,7 +22,7 @@ while s < mid_index:
         s_max = store[s]
     left_capacity += s_max
     s += 1
-e = 999
+e = 1000
 e_max = store[e]
 right_capacity = 0
 while e > mid_index:
