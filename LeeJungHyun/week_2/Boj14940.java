@@ -10,54 +10,59 @@ import java.util.StringTokenizer;
 public class Boj14940 {
 
     private static int N,M;
-    private static int[][] map=new int[N][M];
-    private static boolean[][] visit=new boolean[N][M];
-    private static int[][] distance=new int[N][M];
+    private static int[][] map;
+    private static boolean[][] visit;
+    private static int[][] distance;
 
-    public static void main(String[] args) throws IOException{
+    public static void main(String[] args) throws IOException {
 
-        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 
-        StringTokenizer st=new StringTokenizer(br.readLine());
+        map = new int[N][M];
 
+        distance = new int[N][M];
+
+        visit = new boolean[N][M];
+
+        BufferedReader bf=new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st=new StringTokenizer(bf.readLine());
+
+        // 지도의 크기
         N=Integer.parseInt(st.nextToken());
-
         M=Integer.parseInt(st.nextToken());
 
+        map=new int[N][M];
 
-        int x=0, y=0;
+        distance=new int[N][M];
+
+        visit=new boolean[N][M];
 
 
-        for(int i=0;i<N;i++){
-
-            st=new StringTokenizer(br.readLine());
-
-            for(int j=0;j<M;j++) {
-
+        int x=0,y=0;
+        for(int i=0; i<N; i++) {
+            st=new StringTokenizer(bf.readLine());
+            for(int j=0; j<M; j++) {
                 map[i][j]=Integer.parseInt(st.nextToken());
-
-                if(map[i][j]==2)
-                {
+                if(map[i][j]==2) {
                     x=i;
                     y=j;
-                }
-                else if(map[i][j]==0)
+                    visit[i][j]=true;
+                }else if(map[i][j]==0)
                     visit[i][j]=true;
             }
         }
-        System.out.println("fds");
-		
-		/*bfs(x,y);
-		
+
+
+        bfs(x,y);
+
+
         for (int i = 0; i < N; ++i) {
-        	for(int j=0; j<M; j++) {
-				if(!visit[i][j]) {
-					distance[i][j]=-1;
-				}	
-				System.out.print(distance[i][j]+" ");	
-			}
-			System.out.println();	
-        }*/
+            for(int j=0; j<M; j++) {
+                if(!visit[i][j])
+                    distance[i][j]=-1;
+                System.out.print(distance[i][j]+" ");
+            }
+            System.out.println();
+        }
     }
 
 
@@ -74,24 +79,20 @@ public class Boj14940 {
         while(!q.isEmpty()) {
 
 
-            Points current=q.poll();
+            Points current = q.poll();
 
-            for(int i=0;i<4;i++) {
-                int nextX=current.x+dx[i];
-                int nextY=current.y+dy[i];
+            for (int i = 0; i < 4; i++) {
+                int nextX = current.x + dx[i];
+                int nextY = current.y + dy[i];
 
-                if(nextX<N&&nextY<M&&nextX>=0&&nextY>=0)
-                    if(!visit[nextX][nextY]&&map[nextX][nextY]!=0)
-                    {
-                        distance[nextX][nextY]=distance[current.x][current.y]+1;
-                        q.add(new Points(nextX,nextY));
-                        visit[nextX][nextY]=true;
+                if (nextX < N && nextY < M && nextX >= 0 && nextY >= 0)
+                    if (!visit[nextX][nextY]) {
+                        distance[nextX][nextY] = distance[current.x][current.y] + 1;
+                        q.add(new Points(nextX, nextY));
+                        visit[nextX][nextY] = true;
                     }
             }
         }
-
-
-
     }
 
     public static class Points{
